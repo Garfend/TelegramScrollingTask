@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    app:layoutDescription="@xml/activity_main_scene">
+
+
+    <View
+        android:id="@+id/bar_back"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="#263342"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/logo_rec"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="@drawable/the_chance_logo"
+        app:layout_constraintEnd_toEndOf="@+id/bar_back"
+        app:layout_constraintStart_toStartOf="@+id/bar_back"
+        app:layout_constraintTop_toTopOf="@+id/bar_back" />
+
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/linear_color_top"
+        app:layout_constraintEnd_toEndOf="@+id/bar_back"
+        app:layout_constraintStart_toStartOf="@+id/bar_back"
+        app:layout_constraintTop_toTopOf="@id/bar_back" />
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="@id/bar_back"
+        app:layout_constraintTop_toTopOf="@id/bar_back" />
+
+    <ImageView
+        android:id="@+id/vec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_baseline_more_vert_24"
+        app:layout_constraintEnd_toEndOf="@id/bar_back"
+        app:layout_constraintTop_toTopOf="@id/bar_back" />
+
+    <View
+        android:id="@+id/shadow2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/linear_color"
+        app:layout_constraintBottom_toBottomOf="@+id/bar_back"
+        app:layout_constraintEnd_toEndOf="@+id/bar_back"
+        app:layout_constraintStart_toStartOf="@id/bar_back"/>
+
+    <TextView
+        android:id="@+id/text_the_chance"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:padding="16dp"
+        android:text="@string/the_chance"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bar_back"
+        app:layout_constraintEnd_toEndOf="@+id/bar_back"
+        app:layout_constraintStart_toStartOf="@id/bar_back"/>
+
+    <TextView
+        android:id="@+id/text_subscribers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingBottom="18dp"
+        android:text="@string/_812_subscriber"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/text_the_chance"
+        app:layout_constraintEnd_toEndOf="@+id/text_the_chance"
+        app:layout_constraintStart_toStartOf="@+id/text_the_chance" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedscroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="320dp"
+        android:background="#FF1A242E"
+        app:layout_constraintTop_toBottomOf="@+id/bar_back">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/white"
+            android:text="@string/large_text"
+            />
+    </androidx.core.widget.NestedScrollView>
+
+
+<!--            <View-->
+<!--        android:id="@+id/bar_back1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="160dp"-->
+<!--        android:background="#212d3b"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/logo_circle"-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:background="@drawable/the_chance_logo"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/bar_back1"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/bar_back1" />-->
+
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:background="@drawable/ic_baseline_arrow_back_24"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/bar_back1"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/bar_back1" />-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:background="@drawable/ic_baseline_more_vert_24"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/bar_back1"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/bar_back1" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:layout_marginLeft="80dp"-->
+<!--        android:fontFamily="sans-serif-condensed-light"-->
+<!--        android:paddingLeft="16dp"-->
+<!--        android:text="The Chance"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="32dp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/bar_back1"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/bar_back1"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/logo_circle" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:layout_marginLeft="80dp"-->
+<!--        android:paddingLeft="20dp"-->
+<!--        android:paddingTop="42dp"-->
+<!--        android:text="812 subscriber"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/textView"-->
+<!--        tools:layout_editor_absoluteX="4dp"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/logo_circle"/>-->
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
